@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-TypeWriter</title>
+ <link href="./output.css" rel="stylesheet">
+
+    
+</head>
+<body class="bg-[#323437] text-gray-500">
+  <div id="toast" class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-gray-800 text-white px-6 py-3 rounded-lg text-center opacity-0 pointer-events-none transition-opacity duration-300 z-50"></div>
+
+  <h1 class="text-gray-500 text-center text-8xl my-8">TypeWriter</h1>  
+  <div class="timer text-[#e2b714] mt-12 ml-[12.5%] text-2xl"> 60</div>
+  <div class="placeholder relative w-[75%]  mt-10 text-3xl group mx-auto overflow-auto flex-wrap focus:outline-none" tabindex="0">
+    <div class="textholder group-focus:blur-[0px] blur-[5px]"></div>
+<div class="focusholder group-focus:hidden absolute top-[45%] left-[40%]">
+    Click here to focus
+</div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
