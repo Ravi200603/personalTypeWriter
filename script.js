@@ -47,7 +47,7 @@ document.addEventListener('keydown', ()=>{
 // Adding Words to the div
 async function addText(){
     try{
-    const offloadText =await  fetch('https://api.quotable.io/random');
+    const offloadText = await fetch('https://api.quotable.io/random');
     const response = await offloadText.json();
     const text = response.content;
     const wordArray = text.trim().split(/\s+/);
