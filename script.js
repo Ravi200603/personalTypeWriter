@@ -47,9 +47,9 @@ document.addEventListener('keydown', ()=>{
 // Adding Words to the div
 async function addText(){
     try{
-    const offloadText = await fetch('https://api.quotable.io/random');
-    const response = await offloadText.json();
-    const text = response.content;
+    const offloadText = await fetch('https://api.adviceslip.com/advice');
+    const response = await offloadText.json()
+    const text = response.slip.advice;
     const wordArray = text.trim().split(/\s+/);
     for(const word of wordArray){
         const wordspan = document.createElement('div');
@@ -75,7 +75,7 @@ async function addText(){
     }
     }
     catch(error){
-        console.log("Something went Wrong");
+        console.log("Something went Wrong", error);
         
     }
 
